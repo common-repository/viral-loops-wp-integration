@@ -1,0 +1,10 @@
+.elementor-vloops-icon:before {
+	content: '';
+	display: inline-block;
+	position: relative;
+	background-image: url(../../../images/viral-loops-logo.svg);
+	width: 30px;
+	height: 30px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}

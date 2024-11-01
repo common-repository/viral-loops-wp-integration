@@ -1,0 +1,7 @@
+.vc-vl-icon {
+	background-image: url(../../../images/viral-loops-logo.svg);
+}
+
+#visual_composer_content .wpb_vc_vl_element .wpb_element_title {
+	line-height: 2.2;
+}

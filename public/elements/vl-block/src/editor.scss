@@ -1,0 +1,22 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-vl-gutenberg-vl-block {
+	background: rgba(139,139,150,.1);
+	padding: 1em;
+	color: #6d6d6d;
+	min-height: 200px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	.referral-select {
+		margin-bottom: 20px;
+	}
+	select {
+		background-color: transparent;
+	}
+}

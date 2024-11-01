@@ -1,0 +1,206 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+ 
+.section {
+	border: 2px solid #bbb;
+	border-radius: 1px;	
+	margin: 20px 0;
+	background-color: #fff;
+	max-width: 1200px;
+}
+
+.section-header {
+	border-bottom: 2px solid #bbb;
+	padding: 10px 20px;
+	margin: 0;
+}
+
+.section-content {
+	padding: 10px 20px;
+	position: relative;
+}
+
+.section-subheader {
+	margin-bottom: 25px;
+	font-size: 16px;
+}
+
+.single-campaign {
+	border-bottom: 1px solid #ccd0d4;
+	padding-bottom: 17px;
+	margin-bottom: 25px;
+}
+
+.section .input-label {
+	padding-left: 15px;
+	padding-right: 2px;
+}
+
+.input-info {
+	color: #666;
+	margin-top: 4px;
+	font-style: italic;
+}
+.section input.campaign-input {
+	min-width: 330px;
+	border: 1px solid #b4bcc4;
+	padding-left: 10px;
+}
+
+.active-label {
+	padding: 1px 11px 3px;
+	background-color: #2f2bad;
+	border-radius: 10px;
+	font-weight: bold;
+	color: #fff;	
+}
+/*
+.wp-core-ui .button {
+	padding: 1px 12px;
+	background-color: #b2b1db;
+	color: #fff;
+}*/
+
+.button.camp-deactivate, .button.camp-delete {
+	background-color: #aa0000;
+	border-color: #aa0000;
+	color: #fff;
+}
+
+.button-primary.camp-activate {
+	background-color: #2f2bad;
+	border-color: #2f2bad;
+}
+
+.button-primary.camp-activate:hover {
+	background-color: #5d5ab8;
+	border-color: #5d5ab8;
+}
+
+.button.camp-remove {
+	/*background-color: #f3f4f6;
+	border-color: #007cba;
+	color: #007cba;*/
+}
+
+.button-divider {
+	width: 100%;
+	height: 10px;
+}
+
+.campaign-title {
+	color: #302ab0;
+	font-size: 18px;
+	font-weight: 700;
+	margin-top: 5px;
+}
+
+.campaign-type {
+	font-size: 12px;
+	margin: 4px 0 3px;
+}
+
+.campaign-token {
+	color: #cdcdcd;
+	font-size: 14px;
+}
+/* Loaders */
+#loading, .campaign_new_state_loader {
+	border: 6px solid #f3f3f3; /* Light grey */
+	border-top: 6px solid #007cba; /* Blue */
+	border-radius: 50%;
+	width: 20px;
+	height: 20px;
+	animation: spin 1.6s linear infinite;
+	margin-left: 5px;
+	display: none;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loading-container {
+	display: inline-block;
+	height: 30px;
+}
+
+.campaign_new_state_loader {
+	display: block;
+	border: 23px solid #f3f3f3; /* Light grey */
+	border-top: 23px solid #2f2bad; /* Blue */
+	width: 80px;
+	height: 80px;
+	margin: 0 auto;
+	position: relative;
+	top: 30%;
+}
+
+#campaign_loading_new_state {
+	display: none;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255,255,255, 0.8);
+}
+
+#campaign_delete_popup {
+	position: fixed;
+	top: 30%;
+	max-height: 70%;
+	left: 50%;
+	width: 450px;
+	margin-left: -225px;
+	background: #fff;
+	box-shadow: 0 3px 6px rgba(0,0,0,.3);
+	line-height: 1.5;
+	z-index: 1000005;
+	overflow-y: auto;
+	display: none;
+}
+
+.campaign_delete_popup {
+	margin: 25px;
+}
+
+.campaign-dialog-background {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: #000;
+	opacity: .4;
+	z-index: 1000000;
+	display: none;
+}
+
+/* Notice */
+#add_campaign_notice {
+	font-size: 18px;
+	color: #2f2bad;
+	position: relative;
+	bottom: 7px;
+	left: 6px;
+	transition: opacity 0.2s;
+}
+
+@media (min-width: 765px) {
+	.single-campaign-col-container {
+		display: flex;
+		align-items: center;
+	}
+	.single-campaign-left-col {
+		width: 40%;
+		min-width: 300px;
+	}
+}
+

@@ -1,0 +1,14 @@
+{
+	"name": "vl-gutenberg/vl-block",
+	"title": "Vl Block",
+	"category": "widgets",
+	"icon": "smiley",
+	"description": "VL block written with ESNext standard and JSX support – build step required.",
+	"textdomain": "vl-gutenberg",
+	"supports": {
+		"html": false
+	},
+	"editorScript": "file:./build/index.js",
+	"editorStyle": "file:./build/index.css",
+	"style": "file:./build/style-index.css"
+}
